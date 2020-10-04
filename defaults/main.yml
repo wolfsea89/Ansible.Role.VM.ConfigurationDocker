@@ -1,0 +1,4 @@
+---
+docker_service_path: '/lib/systemd/system/docker.service'
+docker:
+ api: enable

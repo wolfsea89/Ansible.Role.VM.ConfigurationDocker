@@ -1,24 +1,24 @@
 Ansible.Role.VM.ConfigurationDocker
 =========
 
-This role Configurature Docker:
- - enable and service
- - enable api
+Ta rola konfiguruje docker:
+ - ustawia serwis w trybie autoraun i wlacza go
+ - włącza Api
 
-Language: [EN](README.md), [PL](README.PL.md)
+Język: [EN](README.md), [PL](README.PL.md)
 
-Role Variables
+Zmienne w roli
 --------------
 
 defaults:
 ```
-docker_service_path: '/lib/systemd/system/docker.service'
+  docker_service_path: '/lib/systemd/system/docker.service'
 ```
 
-Example Playbook
+Przykładowy Playbook
 ----------------
 
-Including an example of how to use your role (for instance, with variables passed in as parameters) is always nice for users too:
+Przykładowe użycie roli
 ```
     - hosts: servers
       gather_facts: yes
@@ -26,7 +26,7 @@ Including an example of how to use your role (for instance, with variables passe
          - role: Ansible.Role.System.ConfigurationDocker
 ```
 
-Testing
+Testowane
 ------------
 
 Testing on:
@@ -36,12 +36,12 @@ Testing on:
   - Centos 7
   - Centos 8
 
-License
+Licencja
 -------
 
 BSD
 
-Author Information
+Autor
 ------------------
  **Maciej Rachuna**
 ##### System Administrator & DevOps Engineer
