@@ -1,0 +1,16 @@
+---
+- name: Enable and start service docker
+  service:
+    name: docker
+    state: started
+    enabled: yes
+
+- name: "Enable docker api in '{{ docker_service_path }}'"
+  lineinfile:
+    dest: "{{ docker_service_path }}" 
+    regexp: '^#?ExecStart='
+    line: "ExecStart=/usr/bin/dockerd -H fd:// -H=tcp://0.0.0.0:2375 --containerd=/run/containerd/containerd.sock" 
+    state: present
+  notify: 
+    - Reload and restart service docker
+  when: docker.api == 'enable'
