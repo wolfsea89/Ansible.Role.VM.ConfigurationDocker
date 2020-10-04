@@ -2,7 +2,7 @@ Ansible.Role.VM.ConfigurationDocker
 =========
 
 This role Configurature Docker:
- - enable and service
+ - enable and start service
  - enable api
 
 Language: [EN](README.md), [PL](README.PL.md)
@@ -45,4 +45,8 @@ Author Information
 ------------------
  **Maciej Rachuna**
 ##### System Administrator & DevOps Engineer
+<<<<<<< HEAD
 rachuna.maciej@gmail.com
+=======
+rachuna.maciej@gmail.com
+>>>>>>> 06cab252140676dee8f00b6aa51ef117ffbabc67

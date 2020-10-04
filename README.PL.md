@@ -2,7 +2,7 @@ Ansible.Role.VM.ConfigurationDocker
 =========
 
 Ta rola konfiguruje docker:
- - ustawia serwis w trybie autoraun i wlacza go
+ - ustawia serwis w trybie autorun i wlacza go
  - włącza Api
 
 Język: [EN](README.md), [PL](README.PL.md)
